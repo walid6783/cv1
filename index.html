@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walid Ali Mousa | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #eef2f7;
+      color: #1e293b;
+      line-height: 1.8;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0f172a, #1e3a8a);
+      color: white;
+      padding: 70px 0;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .profile-image {
+      width: 320px;
+      height: 320px;
+      border-radius: 30px;
+      overflow: hidden;
+      background: white;
+      padding: 10px;
+    }
+    
+    .profile-image img { 
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+
+    .hero-text h1 {
+      font-size: 3.7rem;
+      line-height: 1.2;
+      margin-bottom: 18px;
+      font-weight: 800;
+    }
+
+    .hero-text h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 25px;
+    }
+
+    .hero-text p {
+      max-width: 750px;
+      font-size: 1.05rem;
+      opacity: 0.92;
+    }
+
+    .top-info {
+      margin-top: 35px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .top-info div {
+      background: rgba(255,255,255,0.12);
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      color: #0f172a;
+      margin-bottom: 35px;
+      font-weight: 800;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 24px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #1e3a8a;
+      font-size: 1.2rem;
+    }
+
+    .card span {
+      color: #64748b;
+      font-size: 0.95rem;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-item {
+      background: white;
+      padding: 22px;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .experience-box {
+      background: white;
+      padding: 35px;
+      border-radius: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .experience-box h3 {
+      font-size: 1.5rem;
+      color: #1e3a8a;
+      margin-bottom: 8px;
+    }
+
+    .experience-box h4 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+
+    .experience-box ul {
+      padding-left: 22px;
+    }
+
+    .experience-box li {
+      margin-bottom: 12px;
+    }
+
+    .contact-box {
+      background: #0f172a;
+      color: white;
+      border-radius: 30px;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-box p {
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+    }
+
+    .contact-box a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    @media(max-width: 900px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .profile-image {
+        margin: auto;
+      }
+
+      .top-info {
+        justify-content: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.7rem;
+      }
+    }
+
+    @media(max-width: 600px) {
+      .profile-image {
+        width: 240px;
+        height: 240px;
+      }
+
+      .hero-text h1 {
+        font-size: 2.1rem;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+
+      .contact-box {
+        padding: 35px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container hero-content">
+
+      <div class="profile-image">
+        <img src="./images/image1.jpeg" alt="Profile Image">
+      </div>
+
+      <div class="hero-text">
+        <h1>Walid Ali Mousa</h1>
+        <h2>Educational Supervisor & English Language Specialist</h2>
+
+        <p>
+          Experienced educational supervisor focused on instructional leadership,
+          teacher development, classroom evaluation, and improving student outcomes
+          through modern educational strategies and professional training.
+        </p>
+
+        <div class="top-info">
+          <div>📍 Hafr Albatin, Saudi Arabia</div>
+          <div>📞 +966536241833</div>
+          <div>✉️ waleed.aly31@gmail.com</div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Professional Summary</h2>
+
+      <div class="card">
+        <p>
+          Dynamic educational leader with extensive experience in supervision,
+          curriculum support, teacher mentoring, and accreditation readiness.
+          Skilled in conducting classroom observations, developing educational plans,
+          and designing professional development workshops that improve teaching
+          quality and student achievement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Bachelor Degree</h3>
+          <span>Benha University – Egypt | 2004</span>
+          <p>English Language and Literature</p>
+        </div>
+
+        <div class="card">
+          <h3>Diploma</h3>
+          <span>Benha University – Egypt | 2005</span>
+          <p>Special Education</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Core Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-item">Educational Administration</div>
+        <div class="skill-item">Teacher Training</div>
+        <div class="skill-item">Curriculum Development</div>
+        <div class="skill-item">Academic Advising</div>
+        <div class="skill-item">Distance Learning</div>
+        <div class="skill-item">Instructional Leadership</div>
+        <div class="skill-item">Educational Mentoring</div>
+        <div class="skill-item">International Accreditation</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="experience-box">
+        <h3>Educational Supervisor</h3>
+        <h4>Tarbeat Al-Ajial International School | 2013 – Present</h4>
+
+        <ul>
+          <li>Led implementation of annual and term-based supervisory plans.</li>
+          <li>Conducted classroom observations and professional feedback sessions.</li>
+          <li>Designed workshops and training programs for teaching staff.</li>
+          <li>Supported institutional readiness for accreditation visits.</li>
+          <li>Improved teaching quality through instructional leadership strategies.</li>
+        </ul>
+      </div>
+
+      <div class="experience-box">
+        <h3>English Language Teacher</h3>
+        <h4>Tarbeat Al-Ajial Secondary School | 2013 – 2018</h4>
+
+        <ul>
+          <li>Prepared and delivered English language lessons and examinations.</li>
+          <li>Enhanced student reading, writing, and speaking skills.</li>
+          <li>Implemented engaging classroom activities and assessments.</li>
+        </ul>
+      </div>
+
+      <div class="experience-box">
+        <h3>English Language Teacher</h3>
+        <h4>Tokh Private Schools – Egypt | 2006 – 2012</h4>
+
+        <ul>
+          <li>Evaluated student performance and maintained classroom discipline.</li>
+          <li>Supported student development through continuous assessment.</li>
+          <li>Maintained detailed academic records and reports.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>KSA Educational Administration</h3>
+          <span>2019</span>
+        </div>
+
+        <div class="card">
+          <h3>Developing Communication Language Competence</h3>
+          <span>2021</span>
+        </div>
+
+        <div class="card">
+          <h3>Strategic Planning</h3>
+          <span>2023</span>
+        </div>
+
+        <div class="card">
+          <h3>Eleot 2.0</h3>
+          <span>2023</span>
+        </div>
+
+        <div class="card">
+          <h3>ICDL</h3>
+          <span>International Certification of Digital Literacy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-box">
+        <h2>Contact Information</h2>
+
+        <p><strong>Phone:</strong> <a href="tel:+966536241833">+966536241833</a></p>
+        <p><strong>Email:</strong> <a href="mailto:waleed.aly31@gmail.com">waleed.aly31@gmail.com</a></p>
+        <p><strong>Location:</strong> Hafr Albatin, Saudi Arabia</p>
+        <p><strong>Portfolio:</strong> <a href="https://sites.google.com/view/waleedalimousaportfo" target="_blank">View Portfolio</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Walid Ali Mousa — Personal Portfolio Website
+  </footer>
+
+</body>
+</html>
